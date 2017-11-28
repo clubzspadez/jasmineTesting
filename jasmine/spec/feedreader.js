@@ -54,7 +54,8 @@ $(function() {
     /* TODO: Write a new test suite named "The menu" */
     describe('The menu', function(){
 
-        let body  = $('body');
+        var body = document.body;
+        var cName = body.className;
 
 
 
@@ -63,8 +64,9 @@ $(function() {
          * the CSS to determine how we're performing the
          * hiding/showing of the menu element.
          */
-         it('menu hidden by defuat', function(){
-            expect(body.)
+         it('menu hidden by defualt', function(){
+            expect(cName).toBe('menu-hidden');
+            console.log(cName);
          });
 
          /* TODO: Write a test that ensures the menu changes
