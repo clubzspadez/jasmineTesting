@@ -111,9 +111,11 @@ $(function() {
         let olderContent, newContent;
         beforeEach(function(done) {
             loadFeed(0, function() {
+                //old feed
               olderContent = $(".feed").html();
             });
               loadFeed(1, function() {
+                //New feed
                 newContent = $(".feed").html();
                 done();
               });
