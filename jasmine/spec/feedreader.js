@@ -28,11 +28,10 @@ $(function() {
     describe('The menu', function(){
 
         var body = document.body;
-        var cName = body.className;
         var menuIcon = $('.menu-icon-link');
 
          it('menu hidden by default', function(){
-            expect(cName).toBe('menu-hidden');
+            expect($(body).hasClass('menu-hidden')).toBe(true);
          });
 
           it('menu toggles changes', function(){
